@@ -49,6 +49,7 @@ public class User implements Savable, Viewable {
         this.hasTempPass = false;
         this.friends = new ArrayList<>();
     }
+
     public User() {
     }
     // === Getters ===
@@ -117,14 +118,26 @@ public class User implements Savable, Viewable {
         // Test
     }
 
+    /**
+     * Return if the User is suspended
+     * @return boolean If the User is suspended
+     */
     public boolean isSuspended() {
         return suspended;
     }
 
+    /**
+     * Gets the suspension change date for the User
+     * @return LocalDateTime The time of suspension change
+     */
     public LocalDateTime getSuspensionChangeDate() {
         return suspensionChangeDate;
     }
 
+    /**
+     * Gets the list of the User's friends
+     * @return List<String> The list of the User's friends
+     */
     public List<String> getFriends() {
         return friends;
     }
@@ -163,29 +176,25 @@ public class User implements Savable, Viewable {
     }
 
     /**
-     * Set a new list of created events
-     * @param createdEvents The new list of created events
+     * Set the User's Suspended field
+     * @param suspended Boolean if the User is suspended
      */
-    public void setCreatedEvents(List<String> createdEvents) {
-        this.ownedEvents = createdEvents;
-    }
-
-    /**
-     * Set a new list of attended events
-     * @param attendingEvents The new list of attending events
-     */
-    public void setAttendingEvents(List<String> attendingEvents) {
-        this.attendingEvents = attendingEvents;
-    }
-
     public void setSuspended(boolean suspended) {
         this.suspended = suspended;
     }
 
+    /**
+     * Set the users friends list
+     * @param friends List<String> The User's friends list to set
+     */
     public void setFriends(List<String> friends) {
         this.friends = friends;
     }
 
+    /**
+     * Set the suspension change date
+     * @param suspensionChangeDate LocalDateTime The time of the User's suspension change date.
+     */
     public void setSuspensionChangeDate(LocalDateTime suspensionChangeDate) {
         this.suspensionChangeDate = suspensionChangeDate;
     }
