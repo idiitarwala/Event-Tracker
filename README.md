@@ -1,6 +1,6 @@
-# CSC207 Project
+# Event-Tracker Project
 
-**Group members: Angela Xiang, Freeman Cheng, Christopher Jung, Ifaz, Austin Blackman, Tony He, Idris Tarwala, Hasti Toossi.**
+**Project Contributors: Angela Xiang, Freeman Cheng, Christopher Jung, Ifaz, Austin Blackman, Tony He, Idris Tarwala, Hasti Toossi.**
 
 ## Running Instructions
 
